@@ -1,0 +1,49 @@
+﻿@using BlackMarketAuctionPart3.Models
+@model Category
+
+<!--
+     Browse.cshtml
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the browse view for the auction list
+-->
+
+@helper Truncate(string input, int length)
+{
+if (input.Length <= length)
+{
+@input
+}
+else
+{
+@input.Substring(0, length)<text>...</text>
+}
+}
+
+@{
+    ViewBag.Title = "Browse";
+}
+<div>
+    <h2>Browsing Category: @Model.Name</h2>
+    @foreach (Item item in Model.items)
+    {
+        <div class="thumb1">
+            <div class="col-sm-3 col-md-4">
+                <div class="thumbnail">
+                    <img src="@item.ItemImage" alt="@item.Name" width="256" height="256">
+                    <div class="caption">
+                        <div class="color1">
+                            <h3>@item.Name</h3>
+                            <p>@item.Category.Name</p>
+                            <p>$@item.Price</p>
+                        </div>
+                        <div class="Button--ghost">
+                            <a href="@Url.Action("Index")" class="Button" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+                            <a href="@Url.Action("Details", new { id = item.ItemID })" class="Button" title="View Category">View Item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
