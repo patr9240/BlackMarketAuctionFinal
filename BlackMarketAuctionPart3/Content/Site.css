@@ -18,9 +18,9 @@ body {
 	color: #333;
 	width: 1000px;
 	background-image:  url('../Assets/Images/Scroll.jpg');
-    background-size: 100%;
+    background-size: 200%;
 	margin: 0px 40px 0px 160px;
-    height: 1000px;
+    height: 1750px;
 }
 .navbar{
     height: 44px;
@@ -35,6 +35,14 @@ body {
     color: #fff;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -99,21 +107,16 @@ textarea {
     color: #f7b10a;
     cursor: pointer;
     display: inline-block;
-    padding: 1px;
-    text-align: center;
+    padding: 10px;
+    text-align: right;
     text-decoration: none;
     text-shadow: 1px 1px 0 #211510,1px 1px 0 #211510;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    border: 1px solid #f7b10a;
+    border-radius: 10px;
+    padding-right: 1em;
 }
-.Button--ghost {
-    border: 1px solid #211510;
-    color: #f7b10a;
-    min-width: 180px;
-    padding: 0;
-    text-shadow: none;
-    -webkit-transition: background .2s,color .2s;
-    transition: background .2s,color .2s;
-}
+
