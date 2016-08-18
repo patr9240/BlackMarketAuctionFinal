@@ -21,6 +21,7 @@ body {
     background-size: 200%;
 	margin: 0px 40px 0px 160px;
     height: 1750px;
+    
 }
 .navbar{
     height: 44px;
@@ -119,4 +120,29 @@ textarea {
     border-radius: 10px;
     padding-right: 1em;
 }
+table {
+    width: 80%;
+}
 
+th {
+    height: 50px;
+    text-align: left;
+    padding: 15px;
+    text-align: left;
+    background-image: url('../Assets/mmo.jpg');
+    font-size: 13.5px;
+    font-weight: 700;
+    color: black;
+
+}
+td {
+    height: 50px;
+    vertical-align: bottom;
+    padding: 15px;
+    text-align: left;
+    padding: 0px;
+}
+table, th, td {
+    border: 1px solid black; 
+    border-collapse: collapse;
+}
