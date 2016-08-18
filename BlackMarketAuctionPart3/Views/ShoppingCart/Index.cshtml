@@ -36,7 +36,7 @@
                "Store", new { id = item.ItemID }, null)
             </td>
             <td>
-                @item.Item.Price
+               $@item.Item.Price
             </td>
             <td id="item-count-@item.RecordID">
                 @item.Count
@@ -57,7 +57,7 @@
         <td></td>
         <td></td>
         <td id="cart-total">
-            @Model.CartTotal
+            $@Model.CartTotal
         </td>
     </tr>
 </table>
