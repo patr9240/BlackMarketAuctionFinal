@@ -6,7 +6,7 @@
 
 */
 html {
-    position: absolute;
+    position: relative;
     min-height: 100%;
     background-image: url('../Assets/mmo.jpg');
     background-repeat: repeat;
@@ -20,7 +20,8 @@ body {
 	background-image:  url('../Assets/Images/Scroll.jpg');
     background-size: 200%;
 	margin: 0px 40px 0px 160px;
-    height: 1750px;
+    height: 1600px;
+    margin-bottom: 10px;
     
 }
 .navbar{
@@ -36,13 +37,6 @@ body {
     color: #fff;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-}
 }
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -145,4 +139,7 @@ td {
 table, th, td {
     border: 1px solid black; 
     border-collapse: collapse;
+}
+.Middle{
+    padding-left: 5em;
 }

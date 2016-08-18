@@ -9,25 +9,26 @@
 
 @using (Html.BeginForm())
 {
+    <div class="Middle">
+        <h2>Address And Payment</h2>
+        <fieldset>
+            <h3>Shipping Information</h3>
+            @Html.EditorForModel()
+        </fieldset>
+        <fieldset>
+            <h3>Payment</h3>
+            <p>
+                We're running a promotion: all items in the store are free
+                with the promo code: "LEGION"!
+            </p>
+            <div class="editor-label">
+                @Html.Label("Promo Code")
+            </div>
+            <div class="editor-field">
+                @Html.TextBox("PromoCode")
+            </div>
+        </fieldset>
 
-    <h2>Address And Payment</h2>
-    <fieldset>
-        <h3>Shipping Information</h3>
-        @Html.EditorForModel()
-    </fieldset>
-    <fieldset>
-        <h3>Payment</h3>
-        <p>
-            We're running a promotion: all items in the store are free
-            with the promo code: "LEGION"!
-        </p>
-        <div class="editor-label">
-            @Html.Label("Promo Code")
-        </div>
-        <div class="editor-field">
-            @Html.TextBox("PromoCode")
-        </div>
-    </fieldset>
-
-    <input type="submit" value="Submit Order" />
+        <input type="submit" value="Submit Order" />
+    </div>
 }
