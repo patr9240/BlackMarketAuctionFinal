@@ -10,9 +10,10 @@
     ViewBag.Title = "Checkout Complete";
 }
 <h2>Checkout Complete</h2>
-<p>Thank you for shopping at Black Market Auction House! Your order number is: @Model</p>
-<p>
-    How about shopping for more of our rare goods?
-    <br/>
-    @Html.ActionLink("Click here to return to the store.","Index", "Home")
-</p>
+<h3>Thank you for shopping at the Black Market Auction House! </h3> 
+<h4>Your order number is: @Model </h4>
+<br />
+    <h5>How about shopping for more of our rare goods?</h5>
+<p class="btn btn-default">
+    @Html.ActionLink("Store.","Index", "Home")
+    </p>
